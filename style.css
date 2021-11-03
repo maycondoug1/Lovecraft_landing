@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+@font-face{
+    font-family: 'title';
+    src: url(fonts/Sketch\ Gothic\ School.ttf);
+}
+@font-face {
+    font-family: 'FontPrinc';
+    src: url(fonts/Stranger\ back\ in\ the\ Night.ttf);
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+}
+#logo_bar{
+    font-family: FontPrinc;
+    font-size: 23pt;
+    font-weight: normal;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    height: 80px;
+}
+#list_bar{
+    display: flex;
+    margin-right: 4rem;
+    font-family: FontPrinc;
+    font-size: 30pt;
+}
+#list_bar li{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 1.5rem;
+    transition: 2s linear;
+}
+#list_bar li :hover{
+    font-size: 37pt;
+}
+article{
+    display: flex;
+    height: 88vh;
+}
+#box{
+    width: 100vw;
+    height: 88vh;
+}
+#box_container{
+    font-family: FontPrinc;
+    font-size: 30pt;
+    font-weight: normal;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+#box_container h1{
+    font-family: title;
+    font-size: 130pt;
+    font-weight: normal;
+}
+#boxing{
+    overflow: visible;
+    height: 88vh;
+    width: 60vw;
+}
+#kt{
+    position: relative;
+    right: 37vw;
+    height: 88vh;
+}
+input{
+    background: white;
+    border: black solid 3px;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 50px;
+    width: 10rem;
+}
