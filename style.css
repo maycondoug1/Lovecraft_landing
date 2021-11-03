@@ -33,6 +33,7 @@ header {
     height: 80px;
 }
 #list_bar{
+    width: 24rem;
     display: flex;
     margin-right: 4rem;
     font-family: FontPrinc;
@@ -51,41 +52,59 @@ header {
 }
 article{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 88vh;
 }
+#mini{
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+    height: 7%;
+}
 #box{
-    width: 100vw;
+    z-index: 1;
+    width: 30vw;
     height: 88vh;
 }
 #box_container{
     font-family: FontPrinc;
-    font-size: 30pt;
+    font-size: 35pt;
     font-weight: normal;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    margin-top: 5vw;
+    min-width: 30vw;
     width: 30vw;
+    height: 30vh;
 }
+
 #box_container h1{
     font-family: title;
-    font-size: 130pt;
+    font-size: 12vw;
     font-weight: normal;
 }
+#box_container p{
+    width: 50vw;
+}
 #boxing{
-    overflow: visible;
     height: 88vh;
-    width: 60vw;
 }
 #kt{
-    position: relative;
-    right: 37vw;
-    height: 88vh;
+    width: 55%;
+    position: absolute;
+    right: 1px;
+    z-index: 0;
 }
 input{
+    font-family: FontPrinc;
+    font-size: 45pt;
+    word-spacing: 5px;
+    text-align: center;
     background: white;
     border: black solid 3px;
     border-radius: 10px;
-    margin-top: 50px;
-    height: 50px;
-    width: 10rem;
+    margin: 50px auto;
+    height: 60px;
+    width: 200px;
 }
