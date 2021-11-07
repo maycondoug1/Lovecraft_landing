@@ -86,6 +86,7 @@ article{
 }
 #box_container p{
     width: 50vw;
+    line-height: 5vh;
 }
 #boxing{
     height: 88vh;
@@ -99,6 +100,7 @@ article{
 input{
     font-family: FontPrinc;
     font-size: 45pt;
+    font-weight: normal;
     word-spacing: 5px;
     text-align: center;
     background: white;
@@ -107,4 +109,40 @@ input{
     margin: 50px auto;
     height: 60px;
     width: 200px;
+    transition: 0.2s linear;
 }
+input:hover{
+    height: 80px;
+    width: 220px;
+    font-size: 50pt;
+}
+@media only screen and (max-width: 768px) {
+    #kt{
+        width: 100%;
+        opacity: 30%;
+    }
+    #box_container{
+        width: 70vw;
+    }
+    #box_container p{
+        width: 90vw;
+  } 
+  }
+
+
+    @media only screen and (max-width: 666px){
+        header{
+            flex-direction: column;
+            height: auto;
+            justify-content: center;
+        }
+        #list_bar{
+            margin-right: 0;
+        }
+        #logo_bar{
+            margin-left: 0;
+        }
+        #box_container h1{
+            font-size: 25vw;
+        }
+    }
